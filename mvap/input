@@ -1,0 +1,10 @@
+int i = 3;
+while(i > 0 and (true or false and 1 < 2))
+{
+	println(i);
+	i = i - 1;
+};
+println(i);
+{
+
+};
