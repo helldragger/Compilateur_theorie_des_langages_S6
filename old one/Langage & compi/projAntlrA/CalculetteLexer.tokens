@@ -1,0 +1,16 @@
+T__0=1
+T__1=2
+T__2=3
+T__3=4
+NEWLINE=5
+WS=6
+ENTIER=7
+PARENTHESEG=8
+PARENTHESED=9
+UNMATCH=10
+'+'=1
+'-'=2
+'*'=3
+'/'=4
+'('=8
+')'=9

@@ -1,0 +1,3 @@
+float y
+readln(y)
+println(5.3 * y + 2.)

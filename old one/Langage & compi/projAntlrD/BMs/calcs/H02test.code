@@ -1,0 +1,14 @@
+int x
+int y = 110 
+int z = 54
+int endthen = 0
+int endelse = 0
+readln(x)
+while (x == 0 and endthen == 0){
+  println(y)
+  endthen=1
+}
+while (x!= 0 and endelse == 0){
+  println(z)
+  endelse=1
+}

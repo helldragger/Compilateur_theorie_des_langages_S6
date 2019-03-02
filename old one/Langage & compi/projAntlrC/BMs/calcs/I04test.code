@@ -1,0 +1,8 @@
+int x
+int y = 0 
+int z = 1
+int t = 2
+readln(x)
+if (x == 0)  println(y)
+else if (x == 1)  println(z)
+     else  println(t)

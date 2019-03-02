@@ -1,0 +1,8 @@
+float i=1.3
+float k
+int j=2
+
+readln(k)
+println(j-1)
+println(i)
+println(k)

@@ -1,4 +1,4 @@
-// Generated from mvaptp.g4 by ANTLR 4.4
+// Generated from mvaptp.g4 by ANTLR 4.5.3
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.Token;
@@ -10,13 +10,13 @@ import org.antlr.v4.runtime.misc.*;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class mvaptpLexer extends Lexer {
-	static { RuntimeMetaData.checkVersion("4.4", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.5.3", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		T__8=1, T__7=2, T__6=3, T__5=4, T__4=5, T__3=6, T__2=7, T__1=8, T__0=9, 
+		T__0=1, T__1=2, T__2=3, T__3=4, T__4=5, T__5=6, T__6=7, T__7=8, T__8=9, 
 		OR=10, AND=11, NOT=12, INF=13, INFEQ=14, SUP=15, SUPEQ=16, EQUAL=17, NEQ=18, 
 		TRUE=19, FALSE=20, READ=21, WRITE=22, WHILE=23, FOR=24, ENTIER=25, REEL=26, 
 		TYPE=27, IDENTIFIANT=28, EOL=29, NEWLINE=30, WS=31, UNMATCH=32;
@@ -24,21 +24,58 @@ public class mvaptpLexer extends Lexer {
 		"DEFAULT_MODE"
 	};
 
-	public static final String[] tokenNames = {
-		"'\\u0000'", "'\\u0001'", "'\\u0002'", "'\\u0003'", "'\\u0004'", "'\\u0005'", 
-		"'\\u0006'", "'\\u0007'", "'\b'", "'\t'", "'\n'", "'\\u000B'", "'\f'", 
-		"'\r'", "'\\u000E'", "'\\u000F'", "'\\u0010'", "'\\u0011'", "'\\u0012'", 
-		"'\\u0013'", "'\\u0014'", "'\\u0015'", "'\\u0016'", "'\\u0017'", "'\\u0018'", 
-		"'\\u0019'", "'\\u001A'", "'\\u001B'", "'\\u001C'", "'\\u001D'", "'\\u001E'", 
-		"'\\u001F'", "' '"
-	};
 	public static final String[] ruleNames = {
-		"T__8", "T__7", "T__6", "T__5", "T__4", "T__3", "T__2", "T__1", "T__0", 
+		"T__0", "T__1", "T__2", "T__3", "T__4", "T__5", "T__6", "T__7", "T__8", 
 		"WORD", "INT", "FLOAT", "CHIFFRE", "OR", "AND", "NOT", "INF", "INFEQ", 
 		"SUP", "SUPEQ", "EQUAL", "NEQ", "TRUE", "FALSE", "READ", "WRITE", "WHILE", 
 		"FOR", "ENTIER", "REEL", "TYPE", "IDENTIFIANT", "EOL", "NEWLINE", "WS", 
 		"UNMATCH"
 	};
+
+	private static final String[] _LITERAL_NAMES = {
+		null, "'('", "')'", "'/'", "'*'", "'-'", "'+'", "'='", "'{'", "'}'", "'or'", 
+		"'and'", "'not'", "'<'", "'<='", "'>'", "'>='", "'=='", "'!='", "'true'", 
+		"'false'", "'readln'", "'println'", "'while'", "'for'", null, null, null, 
+		null, "';'"
+	};
+	private static final String[] _SYMBOLIC_NAMES = {
+		null, null, null, null, null, null, null, null, null, null, "OR", "AND", 
+		"NOT", "INF", "INFEQ", "SUP", "SUPEQ", "EQUAL", "NEQ", "TRUE", "FALSE", 
+		"READ", "WRITE", "WHILE", "FOR", "ENTIER", "REEL", "TYPE", "IDENTIFIANT", 
+		"EOL", "NEWLINE", "WS", "UNMATCH"
+	};
+	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
+
+	/**
+	 * @deprecated Use {@link #VOCABULARY} instead.
+	 */
+	@Deprecated
+	public static final String[] tokenNames;
+	static {
+		tokenNames = new String[_SYMBOLIC_NAMES.length];
+		for (int i = 0; i < tokenNames.length; i++) {
+			tokenNames[i] = VOCABULARY.getLiteralName(i);
+			if (tokenNames[i] == null) {
+				tokenNames[i] = VOCABULARY.getSymbolicName(i);
+			}
+
+			if (tokenNames[i] == null) {
+				tokenNames[i] = "<INVALID>";
+			}
+		}
+	}
+
+	@Override
+	@Deprecated
+	public String[] getTokenNames() {
+		return tokenNames;
+	}
+
+	@Override
+
+	public Vocabulary getVocabulary() {
+		return VOCABULARY;
+	}
 
 
 	public mvaptpLexer(CharStream input) {
@@ -48,9 +85,6 @@ public class mvaptpLexer extends Lexer {
 
 	@Override
 	public String getGrammarFileName() { return "mvaptp.g4"; }
-
-	@Override
-	public String[] getTokenNames() { return tokenNames; }
 
 	@Override
 	public String[] getRuleNames() { return ruleNames; }
@@ -95,9 +129,9 @@ public class mvaptpLexer extends Lexer {
 		"\3\2\2\2-\u0086\3\2\2\2/\u0089\3\2\2\2\61\u008e\3\2\2\2\63\u0094\3\2\2"+
 		"\2\65\u009b\3\2\2\2\67\u00a3\3\2\2\29\u00a9\3\2\2\2;\u00ae\3\2\2\2=\u00b3"+
 		"\3\2\2\2?\u00c0\3\2\2\2A\u00c2\3\2\2\2C\u00c4\3\2\2\2E\u00c9\3\2\2\2G"+
-		"\u00cf\3\2\2\2I\u00d5\3\2\2\2KL\7\61\2\2L\4\3\2\2\2MN\7*\2\2N\6\3\2\2"+
-		"\2OP\7+\2\2P\b\3\2\2\2QR\7,\2\2R\n\3\2\2\2ST\7}\2\2T\f\3\2\2\2UV\7-\2"+
-		"\2V\16\3\2\2\2WX\7\177\2\2X\20\3\2\2\2YZ\7?\2\2Z\22\3\2\2\2[\\\7/\2\2"+
+		"\u00cf\3\2\2\2I\u00d5\3\2\2\2KL\7*\2\2L\4\3\2\2\2MN\7+\2\2N\6\3\2\2\2"+
+		"OP\7\61\2\2P\b\3\2\2\2QR\7,\2\2R\n\3\2\2\2ST\7/\2\2T\f\3\2\2\2UV\7-\2"+
+		"\2V\16\3\2\2\2WX\7?\2\2X\20\3\2\2\2YZ\7}\2\2Z\22\3\2\2\2[\\\7\177\2\2"+
 		"\\\24\3\2\2\2]_\4c|\2^]\3\2\2\2_`\3\2\2\2`^\3\2\2\2`a\3\2\2\2a\26\3\2"+
 		"\2\2bc\7k\2\2cd\7p\2\2de\7v\2\2e\30\3\2\2\2fg\7h\2\2gh\7n\2\2hi\7q\2\2"+
 		"ij\7c\2\2jk\7v\2\2k\32\3\2\2\2lm\4\62;\2m\34\3\2\2\2no\7q\2\2op\7t\2\2"+

@@ -1,0 +1,13 @@
+int x
+int y = 42
+int z = 54
+readln(x)
+println(x)
+x=10
+readln(z)
+println(y) 
+y=x+1
+println(y)
+x=2*y+20
+println(x)
+
